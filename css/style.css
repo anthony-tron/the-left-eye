@@ -1,7 +1,4 @@
 body {
-
-    
-
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,6 +10,7 @@ body {
 
     --active-color: #6B317B;
     --lighter-active-color: rgb(127, 57, 146);
+    --darker-active-color: rgb(81, 37, 94);
 
     --hover-color: #555;
     --darker-hover-color: #444;
@@ -33,43 +31,43 @@ section {
 }
 
 .navbar {
-    position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     top: 0; /* nécessaire pour que sticky fonctionne */
     width: 100%;
     overflow: hidden;
     background-color: var(--navbar-color);
 }
- 
-.navbar .index {
-    display: table-cell; /* ou float: left MAIS les éléments ne prendront pas automatiquement toute la hauteur de l'élément parent */
-    
-    background-color: var(--index-color);
-    color: white;
-    padding: 16px 40px;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 
 .navbar a {
-    display: table-cell; 
+    float: left;
     padding: 16px 32px;
+
     font-size: 1.25em;
     color: white;
     text-align: center;
     text-decoration: none;
 }
-  
+
 .navbar a:hover {
     background-color: var(--lighter-hover-color);
 }
 
 .active {
-    background-color: var(--active-color);
+    background-color: var(--active-color) !important;
 }
 
-.navbar .active:hover, .sub-navbar .active:hover {
-    background-color: var(--lighter-active-color);
+.active:hover {
+    background-color: var(--lighter-active-color) !important;
+}
+
+.navbar .index {
+    float: left;
+    padding: 16px 40px;
+    
+    background-color: var(--index-color);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 
@@ -98,14 +96,22 @@ table {
 }
 
 table,th, td {
-    border: 1px solid #222;
+    border: 1px solid #888;
 }
 
 th {
-    color: lightgrey;
+    color: #EEE;
     border: none;
     background: var(--lighter-active-color);
-    border-bottom: 4px solid var(--active-color);
+    border-bottom: 5px solid var(--darker-active-color);
+    text-emphasis: none;
+}
+
+table th:first-child {
+    width: 150px;
+}
+table th:last-child {
+    width: 400px;
 }
 
 td {
@@ -115,7 +121,6 @@ td {
 
 footer {
     display: flexbox;
-    
 
     background-color: #333;
 }
