@@ -1,0 +1,43 @@
+.combo {
+    list-style-type: none;
+    display: block;
+    margin: 20px 0px;
+}
+
+.combo li {
+    display: inline-block;
+    margin: 0px;
+    padding: 3px 6px;
+
+    background-color: #333;
+    color: #EEE;
+    border-radius: 5px;
+}
+
+.combo li:hover {
+    background-color: #444;
+}
+
+li.optional {
+    background-color: #888;
+}
+
+li.optional:hover {
+    background-color: #999;
+}
+
+li.can-kill {
+    background-color: #cc0000;
+}
+
+li.can-kill:hover {
+    background-color: #dd0000;
+}
+
+li.sub-combo {
+    background-color: blue;
+}
+
+li.sub-combo:hover {
+    background-color: lightblue;
+}
