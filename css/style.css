@@ -32,9 +32,7 @@ section {
 
 .navbar {
     position: relative;
-    top: 0; /* nécessaire pour que sticky fonctionne */
     width: 100%;
-    overflow: hidden;
     background-color: var(--navbar-color);
 }
 
@@ -50,6 +48,9 @@ section {
 
 .navbar a:hover {
     background-color: var(--lighter-hover-color);
+}
+.navbar a:active {
+    background-color: var(--darker-hover-color);
 }
 
 .active {
@@ -116,6 +117,10 @@ table th:last-child {
 
 td {
     padding: 4px;
+}
+
+table tr:hover {
+    background-color: #DFDFDF;
 }
 
 
