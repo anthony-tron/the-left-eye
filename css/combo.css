@@ -1,7 +1,10 @@
+li {
+    margin: 50px 0px;
+}
+
 .combo {
     list-style-type: none;
     display: block;
-    margin: 20px 0px;
 }
 
 .combo li {
@@ -15,30 +18,17 @@
     font-size: 1.25em;
 }
 
-.combo li:hover {
-    background-color: #444;
-}
 
 li.optional {
     background-color: #888;
 }
 
-li.optional:hover {
-    background-color: #999;
-}
 
 li.can-kill {
     background-color: #cc0000;
 }
 
-li.can-kill:hover {
-    background-color: #dd0000;
-}
 
 li.sub-combo {
     background-color: blue;
-}
-
-li.sub-combo:hover {
-    background-color: lightblue;
 }

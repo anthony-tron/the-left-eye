@@ -13,7 +13,15 @@ body {
     --lighter-navbar-color: #444;
 
     --bg-color: #CCC;
+    --darker-bg-color: #BEBEBE;
+
     --fg-color: #DDD;
+
+    --title-color: #111;
+    --subtitle-color: #222;
+    --paragraph-color: #444;
+
+    --link-color: blue;
 
     min-height: 100vh;
     display: flex;
@@ -22,11 +30,18 @@ body {
     margin: 0px;
 
     font-family: sans-serif;
-    background-color: var(--bg-color);   
+    background-color: var(--bg-color);  
+    color: var(--paragraph-color); 
 }
 
 body.theme-b {
-    --active-color: rgb(143, 41, 41);
+    --bg-color: #222;
+    --fg-color: #444;
+
+    --title-color: #EEE;
+    --subtitle-color: #CCC;
+    --paragraph-color: #AAA;
+    --link-color: orange;
 }
 
 section {
@@ -109,6 +124,8 @@ p {
 
 
 table.patchnotes {
+    width: 600px;
+    table-layout: fixed;
     border-collapse: collapse; /* pour rendre les cellules plus jolies */
 }
 
@@ -138,7 +155,7 @@ table.patchnotes td {
 }
 
 table.patchnotes tr:hover {
-    background-color: #DFDFDF;
+    background-color: var(--darker-bg-color);
 }
 
 
@@ -185,13 +202,13 @@ img {
 h1 {
     text-align: center;
     font-size: 3em;
-    color: #111;
+    color: var(--title-color);
 }
 
 table.presentation h2 {
     font-size: 2.5em;
     font-weight: lighter;
-    color: #333;
+    color: var(--subtitle-color);
 }
 
 .container {
@@ -219,4 +236,12 @@ table.presentation a:hover {
 table.presentation td {
     table-layout: fixed;
     width: 200px;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+a {
+    color: var(--link-color);
 }
