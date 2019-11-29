@@ -1,13 +1,4 @@
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-    margin: 0px;
-
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #EEE;
-
     --active-color: #6B317B;
     --lighter-active-color: rgb(127, 57, 146);
     --darker-active-color: rgb(81, 37, 94);
@@ -20,6 +11,22 @@ body {
 
     --navbar-color: #333;
     --lighter-navbar-color: #444;
+
+    --bg-color: #CCC;
+    --fg-color: #DDD;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px;
+
+    font-family: sans-serif;
+    background-color: var(--bg-color);   
+}
+
+body.theme-b {
+    --active-color: rgb(143, 41, 41);
 }
 
 section {
@@ -29,6 +36,13 @@ section {
     
     flex-grow: 1;
 }
+
+
+p {
+    line-height: 2em;
+}
+
+
 
 .navbar {
     position: relative;
@@ -44,6 +58,8 @@ section {
     color: white;
     text-align: center;
     text-decoration: none;
+    
+    transition: background-color 0.1s;
 }
 
 .navbar a:hover {
@@ -92,15 +108,17 @@ section {
 }
 
 
-table {
+table.patchnotes {
     border-collapse: collapse; /* pour rendre les cellules plus jolies */
 }
 
-table,th, td {
+table.patchnotes,
+table.patchnotes th,
+table.patchnotes td {
     border: 1px solid #888;
 }
 
-th {
+table.patchnotes th {
     color: #EEE;
     border: none;
     background: var(--lighter-active-color);
@@ -108,18 +126,18 @@ th {
     text-emphasis: none;
 }
 
-table th:first-child {
+table.patchnotes th:first-child {
     width: 150px;
 }
-table th:last-child {
+table.patchnotes th:last-child {
     width: 400px;
 }
 
-td {
+table.patchnotes td {
     padding: 4px;
 }
 
-table tr:hover {
+table.patchnotes tr:hover {
     background-color: #DFDFDF;
 }
 
@@ -141,4 +159,64 @@ footer a  {
 
 footer a:hover {
     color: white;
+}
+
+table.presentation td {
+    padding: 3px;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+img {
+    border-radius: 4px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #111;
+}
+
+table.presentation h2 {
+    font-size: 2.5em;
+    font-weight: lighter;
+    color: #333;
+}
+
+.container {
+    padding: 20px 20px;
+    margin: 40px 0px;
+    border-radius: 25px;
+    background-color: var(--fg-color);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+}
+
+table.presentation h2, p {
+    margin: 25px 5px;
+}
+
+table.presentation a {
+    text-decoration: none;
+}
+
+table.presentation a:hover {
+    text-decoration: underline;
+}
+
+table.presentation td {
+    table-layout: fixed;
+    width: 200px;
 }

@@ -6,12 +6,13 @@
 
 .combo li {
     display: inline-block;
-    margin: 0px;
-    padding: 3px 6px;
+    margin: 2px 2px;
+    padding: 4px 6px;
 
     background-color: #333;
     color: #EEE;
     border-radius: 5px;
+    font-size: 1.25em;
 }
 
 .combo li:hover {
