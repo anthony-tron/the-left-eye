@@ -34,13 +34,15 @@ body {
     color: var(--paragraph-color); 
 }
 
+
+
 body.theme-b {
     --bg-color: #222;
     --fg-color: #444;
 
     --title-color: #EEE;
     --subtitle-color: #CCC;
-    --paragraph-color: #AAA;
+    --paragraph-color: #BBB;
     --link-color: orange;
 }
 
@@ -93,13 +95,21 @@ p {
 }
 
 .navbar .index {
-    float: left;
     padding: 16px 40px;
     
     background-color: var(--index-color);
     color: white;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.navbar ul {
+    padding: 0px;
+    margin: 0px 0px;
+}
+
+.navbar ul li {
+    display: inline;
 }
 
 
@@ -120,6 +130,20 @@ p {
 
 .sub-navbar a:hover {
     background-color: var(--hover-color);
+}
+
+@media(max-width: 1086px) {
+    .navbar a {
+        display: block;
+        float: none;
+    }
+
+    .sub-navbar a {
+        display: block;
+        float: none;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
 }
 
 
@@ -161,11 +185,12 @@ table.patchnotes tr:hover {
 
 footer {
     display: flexbox;
+    text-align: center;
 
     background-color: #333;
 }
 
-footer a  {
+footer a, footer {
     display: block;
     text-align: center;
 
@@ -245,3 +270,26 @@ iframe {
 a {
     color: var(--link-color);
 }
+
+form {
+    line-height: 2em;
+}
+
+form div {
+    margin: 20px 0px;
+}
+
+form div * {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+form .buttons {
+    display: inline;
+}
+
+.switch-theme:hover {
+    cursor: pointer;
+}
+

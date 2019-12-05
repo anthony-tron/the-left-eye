@@ -3,7 +3,9 @@
     <head>
         <title>Feedback - The Left Eye</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style.css"/>
+        <meta name="description" content="Give your impressions to help the author improving his website."/>
+        <meta name="keywords" content="contact, feedback, mail, discord"/>
     </head>
 
     <body>
@@ -13,7 +15,7 @@
             <a href="./guide/smash-guide.html">Smash Ultimate</a>
             <a href="./guide/bayonetta-guide.html">Bayonetta</a>
             <a href="./guide/bayonetta2-guide.html">Bayonetta 2</a>
-            <a href="./about-me.html">About</a>
+            <a href="./about.html">About</a>
         </nav>
 
 
@@ -28,12 +30,35 @@
                 <h2>Discord</h2>
                 <p>anth096#6425</p>
             </div>
+
+            <div class="container">
+                <h1>Send me your feedbacks !</h1>
+                <hr/>
+
+                <form action="https://getform.io/f/f16d08c5-a3a6-41c5-b8bb-8113ad13d454" method="POST">
+                    <div>
+                        <label for="email-field">Email</label>
+                        <input type="text" id="email-field" name="email"/>
+                    </div>
+                    <div>
+                        <label for="feedback-field">What do you think about this website ?*</label>
+                        <textarea required name="feedback" id="feedback-field"></textarea>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit"/>
+                        <input type="reset"/>
+                    </div>
+                </form>
+            </div>
         </section>
 
 
         <footer>
-            <a href="./about-me.html">About</a>
+            <a href="./about.html">About</a>
             <a href="">Feedback</a>
+            <a class="switch-theme">Switch theme</a>
         </footer>
+
+        <script src="../js/switch-theme.js"></script>
     </body>
 </html>
