@@ -20,19 +20,20 @@
 
 
         <section>
-            <div class="container">
+            <div class="inline-container">
                 <h1>Contact me</h1>
                 <hr/>
 
                 <h2>Mail</h2>
-                <p>anthony.tron@univ-amu.fr</p>
+                <input style="position: absolute; left: -9999px" type="text" value="anthony.tron@univ-amu.fr" id="mail"">anthony.tron@univ-amu.fr</input>
+                <button onclick="copyToClipboard()">Copy</button>
 
                 <h2>Discord</h2>
                 <p>anth096#6425</p>
             </div>
 
-            <div class="container">
-                <h1>Send me your feedbacks !</h1>
+            <div class="inline-container">
+                <h1>Feedback</h1>
                 <hr/>
 
                 <form action="https://getform.io/f/f16d08c5-a3a6-41c5-b8bb-8113ad13d454" method="POST">
@@ -41,8 +42,12 @@
                         <input type="text" id="email-field" name="email"/>
                     </div>
                     <div>
-                        <label for="feedback-field">What do you think about this website ?*</label>
-                        <textarea required name="feedback" id="feedback-field"></textarea>
+                        <label for="feedback-field">What do you think about this website ?</label>
+                        <textarea name="feedback" id="feedback-field"></textarea>
+                    </div>
+                    <div>
+                        <label for="rate-slider">Give a grade to the website : <span id="rate">...</span></label>
+                        <input required type="range" value="5" min="0" max="10" id="rate-slider" class="slider" name="rate"/>
                     </div>
                     <div class="buttons">
                         <input type="submit"/>
@@ -60,5 +65,7 @@
         </footer>
 
         <script src="../js/switch-theme.js"></script>
+        <script src="../js/copy-mail.js"></script>
+        <script src="../js/rate.js"></script>
     </body>
 </html>
