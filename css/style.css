@@ -16,6 +16,7 @@ body {
     --darker-bg-color: #BEBEBE;
 
     --fg-color: #DDD;
+    --lighter-fg-color: #EEE;
 
     --title-color: #111;
     --subtitle-color: #222;
@@ -45,6 +46,7 @@ body {
 body.theme-b {
     --bg-color: #222;
     --fg-color: #444;
+    --lighter-fg-color: #555;
 
     --title-color: #EEE;
     --subtitle-color: #CCC;
@@ -52,6 +54,8 @@ body.theme-b {
     --text-input-color : #111;
 
     --link-color: orange;
+
+    
 }
 
 article {
@@ -234,9 +238,17 @@ li {
     line-height: 1.3em;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
+h2, h3, h4 {
+    font-weight: lighter;
+    color: var(--subtitle-color);
+}
+
 h1 {
     margin: 40px 20px;
-    text-align: center;
     letter-spacing: 3px;
     font-size: 48px;
     color: var(--title-color);
@@ -244,14 +256,15 @@ h1 {
 
 h2 {
     font-size: 36px;
-    font-weight: lighter;
-    color: var(--subtitle-color);
+    letter-spacing: 1px;
 }
 
 h3 {
     font-size: 27px;
-    font-weight: lighter;
-    color: var(--subtitle-color);
+}
+
+h4 {
+    font-size: 24px;
 }
 
 .inline-container {
@@ -264,7 +277,7 @@ h3 {
     overflow: hidden;
 }
 
-.container {
+.container, h1 {
     display: block;
 
     padding: 20px 20px;
@@ -275,6 +288,7 @@ h3 {
 }
 
 iframe {
+    border: none;
     border-radius: 4px;
     display: block;
     margin-right: auto;
@@ -301,6 +315,9 @@ form div input, form div textarea, form div label {
 
 form div.buttons {
     display: flex;
+
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 form  div.buttons input {
