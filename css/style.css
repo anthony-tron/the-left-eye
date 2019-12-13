@@ -21,9 +21,12 @@ body {
     --subtitle-color: #222;
     --paragraph-color: #444;
 
+    --text-input-color: #EEE;
+
     --link-color: blue;
 
-    --gold-t: #FCF995;
+    /*--gold-t: #FCF995;*/
+    --gold-t: #A19C67;
     --red-t: #8B1627;
 
     min-height: 100vh;
@@ -46,10 +49,12 @@ body.theme-b {
     --title-color: #EEE;
     --subtitle-color: #CCC;
     --paragraph-color: #BBB;
+    --text-input-color : #111;
+
     --link-color: orange;
 }
 
-section {
+article {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -59,9 +64,8 @@ section {
 
 
 
-
 p, li {
-    font-size: 1.25em;
+    font-size: 20px;
     line-height: 1.5em;
 }
 
@@ -208,10 +212,6 @@ footer a:hover {
     color: white;
 }
 
-table.presentation td {
-    padding: 3px;
-}
-
 .top {
     vertical-align: top;
 }
@@ -238,18 +238,18 @@ h1 {
     margin: 40px 20px;
     text-align: center;
     letter-spacing: 3px;
-    font-size: 3em;
+    font-size: 48px;
     color: var(--title-color);
 }
 
 h2 {
-    font-size: 2.25em;
+    font-size: 36px;
     font-weight: lighter;
     color: var(--subtitle-color);
 }
 
 h3 {
-    font-size: 1.69em;
+    font-size: 27px;
     font-weight: lighter;
     color: var(--subtitle-color);
 }
@@ -275,7 +275,10 @@ h3 {
 }
 
 iframe {
-    border-radius: 10px;
+    border-radius: 4px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 a {
@@ -301,8 +304,18 @@ form div.buttons {
 }
 
 form  div.buttons input {
-    display: inline-flex;
     text-align: center;
+    border: none;
+    margin: 1px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    transition: opacity 0.2s;
+}
+
+form  div.buttons input:hover {
+    opacity: 0.85;
+    cursor: pointer;
 }
 
 .switch-theme:hover {
@@ -318,7 +331,6 @@ form  div.buttons input {
     -webkit-appearance: none; /* override */
 
     background: #BBB;
-    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -332,19 +344,18 @@ form  div.buttons input {
     appearance: none;
     width: 10%;
     height: 16px;
-    background: var(--active-color);
+    background: var(--gold-t);
     cursor: pointer;
-    transition: background 0.1s;
+    transition: opacity 0.1s;
 }
 
 .slider::-webkit-slider-thumb:hover {
-    background: var(--lighter-active-color);
+    opacity: 0.85;
 }
   
 .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    background: var(--active-color);
     cursor: pointer;
     transition: background 0.2s;
 }
