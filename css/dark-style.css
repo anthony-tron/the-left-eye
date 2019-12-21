@@ -1,0 +1,78 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px;
+
+    font-family: sans-serif;
+    background-color: #222;  
+    color: #BBB
+}
+
+
+
+body.theme-b {
+    --bg-color: #222;
+    --fg-color: #444;
+    --lighter-fg-color: #555;
+
+    --title-color: #EEE;
+    --subtitle-color: #CCC;
+    --paragraph-color: #BBB;
+    --text-input-color : #111;
+
+    --link-color: orange;
+}
+
+
+
+h2, h3, h4 {
+    color: #CCC;
+}
+
+h1 {
+    color: #EEE;
+}
+
+.inline-container {
+    background-color: #444;
+}
+
+.container, h1 {
+    background-color: #444;
+}
+
+
+a {
+    color: orange;
+}
+
+
+form  div.buttons input {
+    background-color: #333;
+    color: white;
+}
+
+
+
+.slider {
+    background: #BBB;
+}
+
+.slider:hover {
+    background: #BFBFBF;
+}
+
+.slider::-webkit-slider-thumb {
+    background: #A19C67;
+}
+
+.download-link {
+    background-color: #333;
+    color: white;
+}
+
+table.patchnotes tr:hover {
+    background-color: #555;
+}

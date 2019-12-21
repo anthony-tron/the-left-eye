@@ -1,35 +1,4 @@
 body {
-    --active-color: #6B317B;
-    --lighter-active-color: rgb(127, 57, 146);
-    --darker-active-color: rgb(81, 37, 94);
-
-    --hover-color: #555;
-    --darker-hover-color: #444;
-    --lighter-hover-color: #666;
-
-    --index-color: #444;
-
-    --navbar-color: #333;
-    --lighter-navbar-color: #444;
-
-    --bg-color: #CCC;
-    --darker-bg-color: #BEBEBE;
-
-    --fg-color: #DDD;
-    --lighter-fg-color: #EEE;
-
-    --title-color: #111;
-    --subtitle-color: #222;
-    --paragraph-color: #444;
-
-    --text-input-color: #EEE;
-
-    --link-color: blue;
-
-    /*--gold-t: #FCF995;*/
-    --gold-t: #A19C67;
-    --red-t: #8B1627;
-
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -37,8 +6,8 @@ body {
     margin: 0px;
 
     font-family: sans-serif;
-    background-color: var(--bg-color);  
-    color: var(--paragraph-color); 
+    background-color: #CCC;  
+    color: #444; 
 }
 
 
@@ -54,8 +23,6 @@ body.theme-b {
     --text-input-color : #111;
 
     --link-color: orange;
-
-    
 }
 
 article {
@@ -81,7 +48,7 @@ p {
 .navbar {
     position: relative;
     width: 100%;
-    background-color: var(--navbar-color);
+    background-color: #333;
 }
 
 .navbar a {
@@ -97,14 +64,14 @@ p {
 }
 
 .navbar a:hover {
-    background-color: var(--lighter-hover-color);
+    background-color: #666;
 }
 .navbar a:active {
-    background-color: var(--darker-hover-color);
+    background-color: #444;
 }
 
 .active {
-    background-color: var(--red-t) !important;
+    background-color: #8B1627 !important;
 }
 
 .active:hover {
@@ -114,7 +81,7 @@ p {
 .navbar .index {
     padding: 16px 40px;
     
-    background-color: var(--index-color);
+    background-color: #444;
     color: white;
     font-size: 1.2em;
     font-weight: bold;
@@ -134,7 +101,7 @@ p {
 .sub-navbar {
     width:100%;
     overflow: hidden;
-    background-color: var(--lighter-navbar-color);
+    background-color: #333;
 }
 
 .sub-navbar a {
@@ -146,19 +113,10 @@ p {
 }
 
 .sub-navbar a:hover {
-    background-color: var(--hover-color);
+    background-color: #555;
 }
 
-@media(max-width: 1086px) {
 
-    .navbar a, .sub-navbar a {
-        display: block;
-        float: none;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        font-size: 3em;
-    }
-}
 
 
 table.patchnotes {
@@ -176,7 +134,7 @@ table.patchnotes td {
 table.patchnotes th {
     color: #EEE;
     border: none;
-    background: var(--red-t);
+    background: #8B1627;
     text-emphasis: none;
 }
 
@@ -192,7 +150,7 @@ table.patchnotes td {
 }
 
 table.patchnotes tr:hover {
-    background-color: var(--darker-bg-color);
+    background-color: #BEBEBE;
 }
 
 
@@ -244,14 +202,14 @@ h1, h2 {
 
 h2, h3, h4 {
     font-weight: lighter;
-    color: var(--subtitle-color);
+    color: #222;
 }
 
 h1 {
     margin: 40px 20px;
     letter-spacing: 3px;
     font-size: 48px;
-    color: var(--title-color);
+    color: #111;
 }
 
 h2 {
@@ -272,7 +230,7 @@ h4 {
 
     padding: 20px 20px;
     margin: 40px 10px;
-    background-color: var(--fg-color);
+    background-color: #DDD;
 
     overflow: hidden;
 }
@@ -282,7 +240,7 @@ h4 {
 
     padding: 20px 20px;
     margin: 40px 0px;
-    background-color: var(--fg-color);
+    background-color: #DDD;
 
     overflow: hidden;
 }
@@ -296,7 +254,7 @@ iframe {
 }
 
 a {
-    color: var(--link-color);
+    color: blue;
 }
 
 form {
@@ -361,7 +319,7 @@ form  div.buttons input:hover {
     appearance: none;
     width: 10%;
     height: 16px;
-    background: var(--gold-t);
+    background: #A19C67;
     cursor: pointer;
     transition: opacity 0.1s;
 }
@@ -390,5 +348,34 @@ form  div.buttons input:hover {
 }
 
 hr {
-    border-color: var(--gold-t);
+    border-color: #A19C67;
+}
+
+
+@media(max-width: 1086px) {
+
+    .navbar a, .sub-navbar a {
+        display: block;
+        float: none;
+        padding-top: 0.75em !important;
+        padding-bottom: 0.75em !important;
+        font-size: 2.5em ! important;
+    }
+}
+
+img.screenshot {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+
+.floating-diagram {
+    width: 480px;
+    float: left;
+    margin-right: 16px;
+}
+
+.no-float {
+    margin-top: 16px;
+    clear: both;
 }
