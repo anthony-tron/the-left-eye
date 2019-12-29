@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -123,6 +127,7 @@ table.patchnotes {
     width: 600px;
     table-layout: fixed;
     border-collapse: collapse; /* pour rendre les cellules plus jolies */
+    margin-bottom: 8px;
 }
 
 table.patchnotes,
@@ -378,4 +383,18 @@ img.screenshot {
 .no-float {
     margin-top: 16px;
     clear: both;
+}
+
+.return-to-the-top {
+    position: fixed;
+    bottom: 40px;
+    right: 48px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+}
+
+.return-to-the-top img {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
 }
