@@ -10,29 +10,16 @@ body {
     color: #BBB
 }
 
-
-
-body.theme-b {
-    --bg-color: #222;
-    --fg-color: #444;
-    --lighter-fg-color: #555;
-
-    --title-color: #EEE;
-    --subtitle-color: #CCC;
-    --paragraph-color: #BBB;
-    --text-input-color : #111;
-
-    --link-color: orange;
+h1 {
+    color: #EEE;
 }
-
-
 
 h2, h3, h4 {
     color: #CCC;
 }
 
-h1 {
-    color: #EEE;
+a {
+    color: orange;
 }
 
 .inline-container {
@@ -43,18 +30,10 @@ h1 {
     background-color: #444;
 }
 
-
-a {
-    color: orange;
-}
-
-
 form  div.buttons input {
     background-color: #333;
     color: white;
 }
-
-
 
 .slider {
     background: #BBB;
@@ -62,10 +41,6 @@ form  div.buttons input {
 
 .slider:hover {
     background: #BFBFBF;
-}
-
-.slider::-webkit-slider-thumb {
-    background: #A19C67;
 }
 
 .download-link {

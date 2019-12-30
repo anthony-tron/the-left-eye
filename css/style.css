@@ -14,191 +14,12 @@ body {
     color: #444; 
 }
 
-
-
-body.theme-b {
-    --bg-color: #222;
-    --fg-color: #444;
-    --lighter-fg-color: #555;
-
-    --title-color: #EEE;
-    --subtitle-color: #CCC;
-    --paragraph-color: #BBB;
-    --text-input-color : #111;
-
-    --link-color: orange;
-}
-
 article {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     
     flex-grow: 1;
-}
-
-
-
-p, li {
-    font-size: 20px;
-    line-height: 1.5em;
-}
-
-p {
-    text-align: justify;
-}
-
-
-.navbar {
-    position: relative;
-    width: 100%;
-    background-color: #333;
-}
-
-.navbar a {
-    float: left;
-    padding: 16px 32px;
-
-    font-size: 1.25em;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    
-    transition: background-color 0.1s;
-}
-
-.navbar a:hover {
-    background-color: #666;
-}
-.navbar a:active {
-    background-color: #444;
-}
-
-.active {
-    background-color: #8B1627 !important;
-}
-
-.active:hover {
-    opacity: 0.9 !important;
-}
-
-.navbar .index {
-    padding: 16px 40px;
-    
-    background-color: #444;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.navbar ul {
-    padding: 0px;
-    margin: 0px 0px;
-}
-
-.navbar ul li {
-    display: inline;
-}
-
-
-
-.sub-navbar {
-    width:100%;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.sub-navbar a {
-    float: left;
-    padding: 7px 8px;
-    color: lightgrey;
-    text-align: center;
-    text-decoration: none;
-}
-
-.sub-navbar a:hover {
-    background-color: #555;
-}
-
-
-
-
-table.patchnotes {
-    width: 600px;
-    table-layout: fixed;
-    border-collapse: collapse; /* pour rendre les cellules plus jolies */
-    margin-bottom: 8px;
-}
-
-table.patchnotes,
-table.patchnotes th,
-table.patchnotes td {
-    border: 1px solid #888;
-}
-
-table.patchnotes th {
-    color: #EEE;
-    border: none;
-    background: #8B1627;
-    text-emphasis: none;
-}
-
-table.patchnotes th:first-child {
-    width: 150px;
-}
-table.patchnotes th:last-child {
-    width: 400px;
-}
-
-table.patchnotes td {
-    padding: 4px;
-}
-
-table.patchnotes tr:hover {
-    background-color: #BEBEBE;
-}
-
-
-footer {
-    display: flexbox;
-    text-align: center;
-
-    background-color: #333;
-}
-
-footer a {
-    display: inline-block;
-    text-align: center;
-
-    padding: 10px;
-    color: #CCC;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: white;
-}
-
-.top {
-    vertical-align: top;
-}
-
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
-}
-
-img {
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-}
-
-li {
-    line-height: 1.3em;
 }
 
 h1, h2 {
@@ -230,14 +51,160 @@ h4 {
     font-size: 24px;
 }
 
-.inline-container {
-    display: inline-table;
+hr {
+    border-color: #A19C67;
+}
 
-    padding: 20px 20px;
-    margin: 40px 10px;
-    background-color: #DDD;
+p {
+    text-align: justify;
+}
 
+p, li {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+a {
+    color: blue;
+}
+
+li {
+    line-height: 1.3em;
+}
+
+img {
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+}
+
+img.screenshot {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    padding: 16px 32px;
+
+    font-size: 1.25em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+    transition: background-color 0.1s;
+}
+
+.navbar a:hover {
+    background-color: #666;
+}
+.navbar a:active {
+    background-color: #444;
+}
+
+.navbar .index {
+    padding: 16px 40px;
+    
+    background-color: #444;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar ul {
+    padding: 0px;
+    margin: 0px 0px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.active {
+    background-color: #8B1627 !important;
+}
+
+.active:hover {
+    opacity: 0.9 !important;
+}
+
+.sub-navbar {
+    width:100%;
     overflow: hidden;
+    background-color: #333;
+}
+
+.sub-navbar a {
+    float: left;
+    padding: 7px 8px;
+    color: lightgrey;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sub-navbar a:hover {
+    background-color: #555;
+}
+
+table.patchnotes {
+    width: 600px;
+    table-layout: fixed;
+    border-collapse: collapse; /* pour rendre les cellules plus jolies */
+    margin-bottom: 8px;
+}
+
+table.patchnotes,
+table.patchnotes th,
+table.patchnotes td {
+    border: 1px solid #888;
+}
+
+table.patchnotes th {
+    color: #EEE;
+    border: none;
+    background: #8B1627;
+    text-emphasis: none;
+}
+
+table.patchnotes th:first-child {
+    width: 200px;
+}
+table.patchnotes th:last-child {
+    width: 400px;
+}
+
+table.patchnotes td {
+    padding: 4px;
+}
+
+table.patchnotes tr:hover {
+    background-color: #BEBEBE;
+}
+
+footer {
+    display: flexbox;
+    text-align: center;
+
+    background-color: #333;
+}
+
+footer a {
+    display: inline-block;
+    text-align: center;
+
+    padding: 10px;
+    color: #CCC;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
 }
 
 .container, h1 {
@@ -250,16 +217,22 @@ h4 {
     overflow: hidden;
 }
 
+.inline-container {
+    display: inline-table;
+
+    padding: 20px 20px;
+    margin: 40px 10px;
+    background-color: #DDD;
+
+    overflow: hidden;
+}
+
 iframe {
     border: none;
     border-radius: 4px;
     display: block;
     margin-right: auto;
     margin-left: auto;
-}
-
-a {
-    color: blue;
 }
 
 form {
@@ -324,7 +297,7 @@ form  div.buttons input:hover {
     appearance: none;
     width: 10%;
     height: 16px;
-    background: #A19C67;
+    background: #8B1627;
     cursor: pointer;
     transition: opacity 0.1s;
 }
@@ -352,28 +325,6 @@ form  div.buttons input:hover {
     opacity: 0.8;
 }
 
-hr {
-    border-color: #A19C67;
-}
-
-
-@media(max-width: 1086px) {
-
-    .navbar a, .sub-navbar a {
-        display: block;
-        float: none;
-        padding-top: 0.75em !important;
-        padding-bottom: 0.75em !important;
-        font-size: 2.5em ! important;
-    }
-}
-
-img.screenshot {
-    width: 400px;
-    margin-bottom: 20px;
-}
-
-
 .floating-diagram {
     width: 480px;
     float: left;
@@ -397,4 +348,47 @@ img.screenshot {
     width: 40px;
     height: 40px;
     padding: 12px;
+}
+
+@media(max-width: 1086px) {
+
+    .navbar a, .sub-navbar a {
+        display: block;
+        float: none;
+        padding-top: 0.75em !important;
+        padding-bottom: 0.75em !important;
+        font-size: 2.5em ! important;
+    }
+
+    .return-to-the-top {
+        bottom: 4px; /* Il faut que le bouton soit le moins genant et le plus facilement cliquable sur mobile*/
+        right: 4px;
+    }
+
+    .return-to-the-top img {
+        width: 96px;
+        height: 96px;
+        padding: 24px;
+    }
+    
+    h1 {
+        font-size: 72px;
+    }
+    
+    h2 {
+        font-size: 54px;
+    }
+    
+    h3 {
+        font-size: 41px;
+    }
+    
+    h4 {
+        font-size: 36px;
+    }
+    
+    p, li {
+        font-size: 30px;
+        line-height: 1.5em;
+    }
 }

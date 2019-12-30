@@ -2,12 +2,13 @@
 <html lang="en">
     <head>
         <title>Feedback - The Left Eye</title>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="../css/style.css"/>
-        <link id="style-link" rel="preload" href="../css/dark-style.css"/>
 
+        <meta charset="utf-8"/>
         <meta name="description" content="Give your impressions to help the author improving his website."/>
         <meta name="keywords" content="contact, feedback, mail, discord"/>
+
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link id="style-link" rel="preload" href="../css/dark-style.css"/>
 
         <link rel="icon" href="./../icon/icon-4-16px.png" sizes="16x16"/>
         <link rel="icon" href="./../icon/icon-4-32px.png" sizes="32x32"/>
@@ -25,9 +26,7 @@
             <a href="./about.html">About</a>
         </nav>
 
-
         <article>
-
             <h1>Feedback</h1>
 
             <section class="inline-container">
@@ -51,14 +50,17 @@
                         <label for="email-field">Email</label>
                         <input type="text" id="email-field" name="email"/>
                     </div>
+
                     <div>
                         <label for="feedback-field">What do you think about this website ?</label>
                         <textarea name="feedback" id="feedback-field"></textarea>
                     </div>
+
                     <div>
                         <label for="rate-slider">Give a grade to the website : <span id="rate">...</span></label>
                         <input type="range" value="5" min="0" max="10" id="rate-slider" class="slider" name="rate"/>
                     </div>
+                    
                     <div class="buttons">
                         <input type="submit"/>
                         <input type="reset"/>

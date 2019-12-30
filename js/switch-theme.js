@@ -2,15 +2,13 @@ var switchButton = document.querySelector('.switch-theme')
 var theme = localStorage.getItem("theme")
 var styleLink = document.getElementById('style-link')
 
-
 if (theme === 'dark-theme') {
     styleLink.rel = 'stylesheet'
-    switchButton.innerHTML = 'Dark theme'
+    switchButton.innerHTML = 'Light theme'
 } else {
     styleLink.rel = 'preload'
-    switchButton.innerHTML = 'Light theme'
+    switchButton.innerHTML = 'Dark theme'
 }
-
 
 switchButton.addEventListener('click', function(event) {
     if (localStorage.getItem("theme") === 'dark-theme') {
